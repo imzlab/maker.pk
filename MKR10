@@ -1,3 +1,7 @@
+/*
+ * MKR1000 Smart Room 
+ * Made By M. Afzal avilable to every one for free use ;)
+ */
 #include <SimpleTimer.h>
 #define BLYNK_PRINT Serial  
 #include <SPI.h>
