@@ -39,8 +39,6 @@ float temp,hum;
 float GasValue;
 float LDRValue;
 
-//char Line[100];
-
 void setup()
 {
   Serial.begin(9600);
@@ -81,8 +79,6 @@ void UploadTHdataToTS(void){
       Serial.print(" Light Level:");
       Serial.print(LDRValue);
       Serial.print("\r\n");
-      //sprintf(Line,"Humidity:%f Temperature:%f Gas Level:%f  Light Level:%f \r\n",hum,temp,GasValue,LDRValue);
-      //Serial.print(Line);
 
       //Upload to Blynk & ThingSpeak
       UploadToBlynk();
