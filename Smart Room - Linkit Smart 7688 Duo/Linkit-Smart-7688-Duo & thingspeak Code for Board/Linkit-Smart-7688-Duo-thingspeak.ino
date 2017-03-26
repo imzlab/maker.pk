@@ -1,3 +1,8 @@
+/*
+ * Linkt Smart 7688 Duo Smart Room
+ * Created By M. Afzal visit imzlab.com
+ *
+ */
 #include <SimpleTimer.h>
 #include <DHT.h>
 #include "ThingSpeak.h"
