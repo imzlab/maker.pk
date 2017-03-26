@@ -1,6 +1,6 @@
 <?php
 
-const ChannelID=239124;
-const WriteAPIKey="9CLLVW8DYYBBCU6W";
-const ReadAPIKey="NCDC0F5BSKAH40HV";
+const ChannelID=0000000; 
+const WriteAPIKey="========Wirte API Key===============";
+const ReadAPIKey="=========Read API Key===============";
 ?>
