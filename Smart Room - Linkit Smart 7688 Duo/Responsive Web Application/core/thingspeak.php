@@ -83,13 +83,11 @@ class ThingSpeak{
 	}
 	
 	function GetTheLastUpdatedValuesofChannel(){
-			//https://api.thingspeak.com/channels/239124/feeds/last
 			$JsonArray=file_get_contents("https://api.thingspeak.com/channels/".ChannelID."/feeds/last");
 			return $JsonArray;
 	}
 	
 	function GetTheLatestEightReocrdsofChannel(){
-			//https://api.thingspeak.com/channels/239124/feeds.json?results=8
 			$JsonArray=file_Get_contents("https://api.thingspeak.com/channels/".ChannelID."/feeds.json?results=8");
 	}
 	function UpdateTheValueToChannel($field,$value){
@@ -101,26 +99,4 @@ class ThingSpeak{
 	}
 
 }
-
-
-
-
-/*
-//To write to ThingSpeak
-
-https://api.thingspeak.com/update?api_key=WRITE_KEY&FIELD_NAME=FIELD_VALUE
-
-https://api.thingspeak.com/update?api_key=9CLLVW8DYYBBCU6W&field5=1
-
-//to Read from ThingSpeak
-
-https://api.thingspeak.com/channels/CHANNEL_ID/feeds.json?results=NUMBER_OF_RESULTS
-
-https://api.thingspeak.com/channels/239124/feeds.json?results=1
-
-//get the last value of field
-https://api.thingspeak.com/channels/239124/fields/FIELD_ID/last?key=READ_KEY
-
-https://api.thingspeak.com/channels/239124/fields/1/last?key=NCDC0F5BSKAH40HV
-*/
 ?>
