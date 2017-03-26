@@ -24,8 +24,8 @@ DHT dht(DHTPIN, DHTTYPE); //// Initialize DHT sensor for normal 16mhz Arduino
 
 SimpleTimer timer;
 
-unsigned long SmartRoomChannelNumber = 239124;
-const char * myWriteAPIKey = "9CLLVW8DYYBBCU6W";
+unsigned long SmartRoomChannelNumber = 000000; // ThingSpeak Channel Number
+const char * myWriteAPIKey = "=========Write API Key=========="; //ThingSpeak Write API Key
 
 float temp,hum;
 float GasValue;
